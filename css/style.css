@@ -48,13 +48,19 @@
 }
 
 .form-group input, .form-group textarea{
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 	width: 100%;
 	padding: 6px 12px;
-	border: 2px solid #24262b;
+	border: 1px solid #ffffff;
 	border-radius: 20px;
 	margin-top: 20px;
-	background-color: #24262b;
-	color: aliceblue;
+	background-color: #ffffff;
+	color: #24262b;
+}
+
+input:focus, textarea:focus{
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+	outline: 0;
 }
 
 input:hover{
