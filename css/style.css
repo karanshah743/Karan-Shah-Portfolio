@@ -6,13 +6,6 @@
     padding: 5rem;
 }
 
-#navcontent:hover, #navcontent:focus{
-	border: 1px solid white;
-	background-color: white;
-	color: #24262b;
-	border-radius: 20px;
-}
-
 .dropdown-menu{
     background-color: black;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
@@ -38,8 +31,42 @@
   	padding: 10px;
 }
 
+.nav-item:hover{
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.headings{
+	text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-position: under;
+}
+
 .aboutme{
 	background: #24262b;
+}
+
+.scroll-up{
+	position: fixed;
+	z-index: 999;
+	bottom: 0.8em;
+	right: 0.8em;
+}
+
+.scroll-up a{
+	background-color: #0000007d;
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	border-radius: 21px;
+}
+
+#arrow{
+	font-size: 25px;
+	padding-top: 5px;
 }
 
 .progress{
@@ -148,7 +175,6 @@ iframe{
 }
 .footer-col ul li a{
 	font-size: 16px;
-	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
 	color: #bbbbbb;
