@@ -46,14 +46,7 @@
 	background: #24262b;
 }
 
-.scroll-up{
-	position: fixed;
-	z-index: 999;
-	bottom: 0.8em;
-	right: 0.8em;
-}
-
-.scroll-up a{
+.scroll-up #up{
 	background-color: #0000007d;
 	display: block;
 	width: 40px;
@@ -62,11 +55,68 @@
 	color: white;
 	font-size: 14px;
 	border-radius: 21px;
+	position: fixed;
+	z-index: 999;
+	bottom: 3.8em;
+	right: 0.8em;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+.scroll-up #plus{
+	background-color: #0000007d;
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	border-radius: 21px;
+	position: fixed;
+	z-index: 999;
+	bottom: 0.8em;
+	right: 0.8em;
+	transition: 0.5s;
 }
 
 #arrow{
 	font-size: 25px;
 	padding-top: 5px;
+}
+
+#cross{
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.scroll-up #whatsapp{
+	background-color: green;
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	border-radius: 21px;
+	position: fixed;
+	z-index: 999;
+	bottom: 4.0em;
+	right: 0.5em;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+.scroll-up.active #plus{
+	transform: rotate(130deg);
+	transition: 0.5s;
+}
+
+.scroll-up.active #whatsapp, .scroll-up.active #up{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s;
 }
 
 .progress{
