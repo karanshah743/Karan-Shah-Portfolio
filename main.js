@@ -18,3 +18,8 @@ var form = document.getElementById("my-form");
       });
     }
     form.addEventListener("submit", handleSubmit)
+
+function actionToggle(){
+  var action = document.querySelector('.scroll-up');
+  action.classList.toggle('active')
+}
