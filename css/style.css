@@ -44,6 +44,22 @@
 
 .aboutme{
 	background: #24262b;
+	transition: 1s
+}
+
+#projectimg{
+	box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+#projectimg:hover{
+	box-shadow: 0px 2px 10px rgb(0 0 0 / 30%);
+}
+
+.project:hover #projectimg{
+	filter: grayscale(0%);
+	transition: 1s;
 }
 
 .scroll-up #up{
@@ -91,7 +107,7 @@
 }
 
 .scroll-up #whatsapp{
-	background-color: green;
+	background-color: #20d620;
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -170,10 +186,6 @@ iframe{
 
 ::placeholder{
 	color: #bbbbbb;
-}
-
-.project:hover{
-	box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.7);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -264,10 +276,3 @@ iframe{
     width: 100%;
 	}
 }
-
-
-
-
-
-
-
