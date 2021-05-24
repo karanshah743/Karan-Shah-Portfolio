@@ -181,6 +181,11 @@
 }
 
 /* CSS for progress bar in Skills section */
+#skillsbox{
+	border-left: 2px solid #827979;
+	border-right: 2px solid #827979;
+}
+
 .progress{
 	margin-left: 11%;
 	margin-right: 11%;
@@ -352,5 +357,16 @@ iframe{
 
 	#profileimg{
 		padding-left: 10%;
+	}
+
+	#skillsbox{
+		border-top: 2px solid #827979;
+		border-bottom: 2px solid #827979;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	#sundaewrap{
+		flex-wrap: wrap-reverse;
 	}
 }
