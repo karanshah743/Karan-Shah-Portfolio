@@ -23,14 +23,16 @@
 
 <body onload="myFunction()">
 
+  <!-- Preloader -->
   <div class="preloader">
     <div id="loader">
     </div>  
   </div>
 
+  <!-- Main Page -->
   <div id="mainPage" style="visibility: hidden;">
   <!-- Navbar Section -->
-    <nav id="navtoggle" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+    <nav id="navtoggle" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #24262b">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">Hello Everyone!</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -58,7 +60,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a id="navcontent" class="nav-link" href="#contactme">Contact</a>
+              <a id="navcontent3" class="nav-link" href="#contactme">Contact</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -87,7 +89,7 @@
 
     <!-- Welcome Card -->
     <div class="card mb-3" id="home" style="width: 100%; padding-top: 3%;">
-      <div class="row g-0">
+      <div id="welcomeimg" class="row g-0">
         <div class="col-md-8" style="margin-top: 3%;">
           <div class="card-body" style="text-align: justify; margin: 0% 5%;">
             <h3 class="card-title">Myself, Karan Shah</h3>
@@ -102,7 +104,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <img src="images/DP1.png" alt="..." style="width: 100%;">
+          <img id="profileimg" src="images/DP1.png" alt="..." style="width: 100%;">
         </div>
       </div>
     </div>
@@ -511,7 +513,7 @@
         <div style="color: rgb(223, 223, 223); text-align: center; font-size: small;">
           <p>
             <i class="far fa-copyright"></i>
-            Copyright 2021 <strong style="font-weight: bolder;">Karan Shah</strong> - All Rights Reserved
+            Copyright 2021 <strong style="font-weight: 900;">Karan Shah</strong> - All Rights Reserved
           </p>
         </div>
       </div>
@@ -543,7 +545,7 @@
   var myVar;
 
   function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(showPage, 500);
   }
 
   function showPage() {
