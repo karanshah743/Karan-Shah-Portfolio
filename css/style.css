@@ -1,3 +1,4 @@
+/* CSS for Preloader */
 .preloader{
 	display: block;
 	width: 100%;
@@ -31,7 +32,7 @@
 	100% { transform: rotate(360deg); }
 }
 
-
+/* CSS common for card */
 .card{
     border: 0px;
 }
@@ -40,6 +41,7 @@
     padding: 5rem;
 }
 
+/* CSS for dropdown menu */
 .dropdown-menu{
     background-color: black;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
@@ -49,6 +51,7 @@
     color: rgba(255,255,255,0.5);
 }
 
+/* CSS for navbar text and social link icons */
 .navbar-text .social-links a{
     padding: 10px;
     font-size: x-large;
@@ -57,30 +60,36 @@
 .navbar{
     padding-top: 0px;
     padding-bottom: 0px;
-	background-color: rgba(0,0,0,0.9) !important;
+	background-color: rgba(36,38,43,0.9) !important;
 	backdrop-filter: blur(2px);
+	transition: top 0.3s;
 }
 
 .nav-item{
-  	padding: 10px;
+  	padding: 8px;
+	border-bottom: 3px solid transparent;
 }
 
 .nav-item:hover{
 	color: #ffffff;
 	font-weight: 600;
+	border-bottom: 3px solid red;
 }
 
+/* CSS for all titles */
 .headings{
 	text-decoration: underline;
     text-decoration-color: red;
     text-underline-position: under;
 }
 
+/* CSS for Abiut Me section */
 .aboutme{
 	background: #24262b;
 	transition: 1s
 }
 
+/* CSS for Projects section */
 #projectimg{
 	box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 	filter: grayscale(100%);
@@ -96,6 +105,7 @@
 	transition: 1s;
 }
 
+/* CSS for Floating action buttons */
 .scroll-up #up{
 	background-color: #0000007d;
 	display: block;
@@ -114,9 +124,10 @@
 	transition: 0.5s;
 }
 
-.scroll-up #plus{
+#plus{
 	background-color: #0000007d;
 	display: block;
+	cursor: pointer;
 	width: 40px;
 	height: 40px;
 	text-align: center;
@@ -169,6 +180,7 @@
 	transition: 0.5s;
 }
 
+/* CSS for progress bar in Skills section */
 .progress{
 	margin-left: 11%;
 	margin-right: 11%;
@@ -177,6 +189,7 @@
 	background-color: #ffffff;
 }
 
+/* CSS for Send Me a Message form */
 .form-group{
 	margin-top: 20px;
 }
@@ -209,19 +222,21 @@ textarea{
 	resize: none;
 }
 
+::placeholder{
+	color: #bbbbbb;
+}
+
 input[type="text" i] {
     padding: 6px 12px;
 }
 
+/* CSS for embedded map in Location section */
 iframe{
 	width: 100%;
 	box-shadow: 2px 2px 12px (0,0,0,0.3);
 }
 
-::placeholder{
-	color: #bbbbbb;
-}
-
+/* CSS for modal */
 .modal-content{
 	border-radius: 20px;
 	box-shadow: 2px 2px 12px (0,0,0,0.3);
@@ -239,6 +254,7 @@ iframe{
 	border-top: 0;
 }
 
+/* CSS for Footer */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .footer .container{
@@ -325,5 +341,16 @@ iframe{
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+	}
+}
+
+/* Specific CSS for Welcome section */
+@media only screen and (max-width: 400px) {
+	#welcomeimg{
+		flex-wrap: wrap-reverse;
+	}
+
+	#profileimg{
+		padding-left: 10%;
 	}
 }
