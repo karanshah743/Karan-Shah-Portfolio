@@ -1,3 +1,4 @@
+//For submitting the response
 var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
@@ -19,7 +20,20 @@ var form = document.getElementById("my-form");
     }
     form.addEventListener("submit", handleSubmit)
 
+//Floating action button
 function actionToggle(){
   var action = document.querySelector('.scroll-up');
   action.classList.toggle('active')
 }
+
+//Hide navbar on scrolling down and show navbar on scrolling up
+var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navtoggle").style.top = "0";
+    } else {
+      document.getElementById("navtoggle").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
