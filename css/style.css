@@ -180,6 +180,49 @@
 	transition: 0.5s;
 }
 
+#btech , #hss , #ssc{
+	border-left: 3px solid #6565d6;
+}
+
+#btech::after , #hss::after , #ssc::after{
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: -12px;
+	background-color: white;
+	border: 4px solid #6565d6;
+	top: 0px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 13px;
+	width: 0;
+	z-index: 1;
+	left: 11px;
+	border: medium solid #24262b;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #24262b transparent transparent;
+  }
+
+  .left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 13px;
+	width: 0;
+	z-index: 1;
+	right: 11px;
+	border: medium solid #24262b;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent #24262b;
+  }
+
 /* CSS for progress bar in Skills section */
 #skillsbox{
 	border-left: 2px solid #827979;
