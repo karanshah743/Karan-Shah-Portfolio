@@ -528,6 +528,18 @@ iframe {
         padding-left: 10%;
     }
 
+	.resume-message-group{
+		text-align: center !important;
+	}
+
+	#view-resume{
+		margin-right: 0 !important;
+	}
+
+	#send-message{
+		margin-top: 4%;
+	}
+
     #skillsbox {
         border-top: 2px solid #827979;
         border-bottom: 2px solid #827979;
