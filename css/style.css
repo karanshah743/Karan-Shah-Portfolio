@@ -479,6 +479,23 @@ iframe {
 
 /* Specific CSS for Responsive Design */
 @media only screen and (max-width: 750px) {
+    .navbar-collapse{
+        height: 100vh;
+        margin-top: 10%;
+    }
+    
+    .nav-link:focus{
+        text-align: center;
+    }
+
+    .navbar-nav{
+        align-items: center;
+    }
+
+    .social-links{
+        text-align: center;
+    }
+
     #welcomeimg {
         flex-wrap: wrap-reverse;
     }
@@ -578,4 +595,8 @@ iframe {
         background-image: linear-gradient(270deg, #24262b, transparent);
         z-index: 1;
     }
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
