@@ -481,7 +481,17 @@ iframe {
 @media only screen and (max-width: 750px) {
     .navbar-collapse{
         height: 100vh;
-        margin-top: 10%;
+        margin-top: 15%;
+        transition: 0.5s;
+    }
+
+    .nav-link{
+        font-size: 25px;
+        line-height: 80px;
+    }
+
+    .dropdown-menu{
+        font-size: 20px;
     }
     
     .nav-link:focus{
@@ -492,7 +502,12 @@ iframe {
         align-items: center;
     }
 
+    .social-links .fab, .social-links .fa{
+        font-size: 25px;
+    }
+
     .social-links{
+        margin-top: 2%;
         text-align: center;
     }
 
