@@ -479,7 +479,7 @@ iframe {
 
 /* Specific CSS for Responsive Design */
 @media only screen and (max-width: 750px) {
-    .navbar-collapse{
+    /*.navbar-collapse{
         height: 100vh;
         margin-top: 15%;
         transition: 0.5s;
@@ -509,7 +509,7 @@ iframe {
     .social-links{
         margin-top: 2%;
         text-align: center;
-    }
+    }*/
 
     #welcomeimg {
         flex-wrap: wrap-reverse;
