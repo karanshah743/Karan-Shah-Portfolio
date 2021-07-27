@@ -86,6 +86,11 @@
     border-bottom: 3px solid red;
 }
 
+/* CSS for Intro text */
+#introtext {
+    width: 80%;
+}
+
 /* CSS for all titles */
 .headings {
     text-decoration: underline;
@@ -519,6 +524,10 @@ iframe {
         padding-left: 15%;
     }
 
+    #introtext {
+        width: 100%;
+    }
+
     #skillsbox {
         border-top: 2px solid #827979;
         border-bottom: 2px solid #827979;
@@ -558,6 +567,10 @@ iframe {
 
     #profileimg {
         padding-left: 10%;
+    }
+
+    #introtext {
+        width: 100%;
     }
 
 	.resume-message-group{
