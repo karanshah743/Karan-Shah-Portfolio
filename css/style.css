@@ -609,6 +609,14 @@ iframe {
         border-right: 0;
     }
 
+    #android_development_logo, #nodejs_logo {
+        margin-top: 30px;
+    }
+
+    #laravel_logo, #reactjs_logo, #android_development_logo, #nodejs_logo {
+        width: 35%;
+    }
+
     #carouselRoboImg{
         width: 240px;
         height: 160px;
